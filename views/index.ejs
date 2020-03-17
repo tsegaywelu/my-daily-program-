@@ -1,0 +1,21 @@
+<html>
+    <style></style>
+    <script src='home.js'></script>
+<head></head>
+
+<body>
+    <form action='/add' method="post">
+        <input type='text' name="name" >
+        <input type='number' name="year" >
+        <input type='submit'>
+    </form>
+
+<% if(users){users.forEach(function(u){ %>
+  <div></div><%=u.name%><a href='/delet/<%=u._id%>'>delete</a></div>
+<%});}%>
+<p><a href="add"><button>add user</button> </a></p>
+
+</body>
+
+
+</html
